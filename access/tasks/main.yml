@@ -1,0 +1,9 @@
+---
+- name: Ensure access.conf
+  template: 
+    src=access.j2
+    dest=/etc/security/access.conf
+    owner=root
+    group=root
+    mode=0644
+
